@@ -1,0 +1,172 @@
+/* Global Styles */
+:root {
+  --background-color-light: #f0f0f0;
+  --background-color-dark: #222;
+  --text-color-light: #000;
+  --text-color-dark: #fff;
+}
+
+header {
+  display: flex; /* Make header a flex container */
+  justify-content: space-between; /* Align items horizontally with space between */
+  align-items: center; /* Align items vertically in the center */
+  padding: 1rem 2rem; /* Add some padding inside the header */
+  border-bottom: 1px solid #ddd; /* Add a bottom border */
+}
+
+h1 {
+  margin: 0 auto; /* Remove default margin from heading */
+  font-size: 25rem; /* Adjust heading font size as needed */
+  text-align: center;
+  width: fit-content;
+
+}
+
+#Foodish-logo {
+  height: auto; 
+  width: 150px; 
+  border-radius: 50px;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+#theme-button {
+  background-color: var(--text-color-light); /* Use light theme text color by default */
+  color: var(--background-color-light); /* Use light theme background color for button text */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer; /* Indicate clickable element */
+  margin-bottom: 10px;
+  margin-top: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Animate button color change */
+}
+#theme-button:hover{
+  background-color: white;
+}
+
+/* Apply styles based on data-theme attribute */
+body[data-theme="dark"] {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+/* Container for Layout */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+#like-section {
+  display: flex; /* Make the button and count inline */
+  align-items: center; /* Vertically align content */
+  margin-top: 1rem; /* Add space above the like section (optional) */
+}
+
+#like-button {
+  margin-right: 1rem; /* Add space between button and count */
+  padding: 0.5rem 1rem; /* Add padding to the button */
+  border: 1px solid #ddd; /* Create a light border for button */
+  border-radius: 5px; /* Add rounded corners to button */
+  cursor: pointer; /* Indicate clickable button on hover */
+  background-color: #ddd; /* Light gray background color (unliked) */
+  color: #000; /* Black text color */
+}
+
+/* Like button styling (liked state) */
+#like-section.liked #like-button {
+  background-color: red; /* Red background color for liked state */
+  color: white; /* White text color for liked state */
+}
+
+#like-count {
+  font-weight: bold; /* Make the count text bold */
+}
+
+#comment-section {
+  margin-top: 2rem; /* Add some space above the comments */
+  border: 1px solid #ddd; /* Create a light border */
+  padding: 1rem; /* Add some padding inside the section */
+}
+
+#comment-section h2 {
+  margin-bottom: 1rem; /* Add space below the comments heading */
+}
+
+#commentForm {
+  display: flex; /* Arrange input and button horizontally */
+  margin-bottom: 1rem; /* Add space below the form */
+}
+
+#commentInput {
+  flex: 1; /* Make the input field flexible to fill available space */
+  padding: 0.5rem 1rem; /* Add padding to the input */
+  border: 1px solid #ddd; /* Create a light border for input */
+  border-radius: 5px; /* Add rounded corners to input */
+  resize: vertical; /* Allow resizing the textarea vertically */
+}
+
+#commentForm button {
+  margin-left: 1rem; /* Add space between input and button */
+  padding: 0.5rem 1rem; /* Add padding to the button */
+  border: 1px solid #ddd; /* Create a light border for button */
+  border-radius: 5px; /* Add rounded corners to button */
+  cursor: pointer; /* Indicate clickable button on hover */
+}
+#commentForm button:hover{
+  background-color: deeppink;
+}
+#comments {
+  font-size: large;
+
+}
+/* Style the food section container */
+.food-section {
+  margin: 20px auto; /* Add some margin for spacing */
+  width: 600px; /* Set a width for the section */
+  border: 1px solid #ddd; /* Add a light border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px; /* Add some padding inside the section */
+}
+
+/* Style the dropdown element */
+#foodCategory {
+  width: 100%; /* Make the dropdown fill the section width */
+  padding: 5px; /* Add some padding within the dropdown */
+  border: 1px solid #ccc; /* Add a thin border */
+  border-radius: 3px; /* Add rounded corners */
+}
+
+/* Style the image container (initially hidden) */
+#foodImages {
+  display: flex; /* Arrange images horizontally */
+  flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+  margin-top: 10px; /* Add some margin after the dropdown */
+}
+
+/* Style the individual food images */
+#foodImages img {
+  width: 100px; /* Set a width for each image */
+  height: 100px; /* Set a height for each image */
+  margin: 5px; /* Add some margin between images */
+  
+}
+
+  

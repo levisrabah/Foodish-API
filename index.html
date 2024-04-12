@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foodish App.</title>
+</head>
+<body>
+  <header>
+    <button id="theme-button">Change to dark theme</button>
+    <h1>Foodish App.</h1> <img src="Delicious Food Logo Vector Design Images, Food Logo, Cooking Logo, Restaurant Logo, Organic Logo PNG Image For Free Download.jpeg" alt="logo" id="Foodish-logo"> 
+  </header>
+
+  <div class="food-section">
+    <select id="foodCategory">
+      <option value="">Select a Category</option>
+      <option value="pizza">Pizza</option>
+      <option value="biryani">Biryani</option>
+      <option value="burger">Burger</option>
+      <option value="dessert">Dessert</option>
+      <option value="pasta">Pasta</option>
+      <option value="samosa">samosa</option>
+      <option value="dosa">dosa</option>
+      <option value="idly">idly</option>
+      <option value="rice">rice</option>
+      <option value="butter-chicken">butter-chicken</option>
+    </select>
+    <div id="foodImages"></div> </div>
+  
+  
+  <img id="foodImage" src="" alt="Food Image">  <div id="like-section">
+    <button id="like-button">Like</button>
+    <span id="like-count">0 Likes</span>
+  </div>
+  
+  <section id="comment-section">
+    <h2>Comments</h2>
+    <form id="commentForm">
+      <textarea id="commentInput" placeholder="Write your comment here..."></textarea>
+      <button type="submit">Submit Comment</button>
+    </form>
+    <div id="comments"></div>
+  </section>
+  
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
